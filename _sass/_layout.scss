@@ -201,6 +201,10 @@
 
   > li {
     margin-bottom: $spacing-unit;
+
+    > h2 {
+      margin-bottom: 0px;
+    }    
   }
 }
 
@@ -231,6 +235,11 @@
   @include media-query($on-laptop) {
     font-size: 36px;
   }
+}
+
+.post-excerpt {
+  color: white;
+  font-size: 14px;
 }
 
 .post-content {
