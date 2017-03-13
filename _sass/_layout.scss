@@ -24,6 +24,7 @@
 
 
 .site-title {
+  font-family: $heading-font-family;
   font-size: 26px;
   font-weight: 300;
   line-height: 56px;
@@ -54,10 +55,15 @@
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
+    font-size: 16px;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
+    }
+
+    &:hover{
+      color:white;
     }
   }
 
@@ -67,7 +73,7 @@
     right: $spacing-unit / 2;
     background-color: $background-color;
     border: 1px solid $grey-color-light;
-    border-radius: 5px;
+    border-radius: 1px;
     text-align: right;
 
     .menu-icon {
@@ -215,7 +221,12 @@
 
 .post-link {
   display: block;
-  font-size: 24px;
+  font-size: 30px;
+  &:hover {
+    text-decoration: none;
+    color: white;
+    transition: color .1s;
+  }
 }
 
 
@@ -239,7 +250,7 @@
 
 .post-excerpt {
   color: white;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .post-content {

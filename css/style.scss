@@ -3,15 +3,20 @@
 
 // Define defaults for each variable.
 
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$base-font-size:   16px !default;
+
+$heading-font-family: 'Sanchez' !default;
+$heading-font-size: 50px !default;
+$heading-font-weight: 400 !default;
+$base-font-family: 'Lato', sans-serif !default;
+$base-font-size:   20px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #e8e8e8 !default;
+$heading-color:    #ffffff !default;
+$text-color:       #bbbbbb !default;
 $background-color: #252525 !default;
 $brand-color:      #6ec7ff !default;
 

@@ -82,9 +82,18 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
+  color: $heading-color;
+  font: $heading-font-weight #{$heading-font-size}/#{$base-line-height} $heading-font-family;
 }
 
+
+
+/**
+ * Sub-Headings
+ */
+h3, h4, h5, h6 {
+  margin-top: $spacing-unit;
+}
 
 
 /**
@@ -99,8 +108,8 @@ a {
   }
 
   &:hover {
-    color: $text-color;
-    text-decoration: underline;
+    color: white;
+    text-decoration: none;
   }
 }
 
