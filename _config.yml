@@ -16,7 +16,7 @@
 title: samhemann.com
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Soon to be place for my ideas, scripts, and inspirations.
+  A place for my ideas, scripts, and inspirations.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
