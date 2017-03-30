@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "Draft: Building a Discord Bot with Node.js"
-date:   2017-03-10 18:03:47 -0600
+title:  "Building a Discord Bot with Node.js"
+date:   2017-03-28 18:03:47 -0600
 description: Add some custom functionality to you discord server with node.js
 categories: nodejs
 ---
 
-This guide will cover every step needed to get up and running with your own Discord bot. 
+This guide will cover every step needed to get up and running with your own Discord bot, 
+aimed at anyone who is new to Node.js or just unsure of where to start.  
 
 
 ## Prerequisites
@@ -23,15 +24,17 @@ used can be found in [this repository](https://github.com/metasloth/discord-node
 ## Creating a Discord Application
 
 First you'll need to create a Discord app. Head over to 
-https://discordapp.com/developers/applications/me and create a new
-app. Once your bot is created, you'll want to click "Create App Bot User". 
+https://discordapp.com/developers/applications/me and choose "New App". 
+Once your app is created, you'll want to click "Create App Bot User". 
 This will give your bot a username and allow you to add it to servers.
 
-Navigate to: 
+Since Discord servers are free and easy to make, I recommend making one 
+specifically for testing the bot. Once you do this, you can add the bot to 
+your server by replacing "YOUR_CLIENT_ID" with the Client ID of your bot in 
+the following url:
 ```
-https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=0
+https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=0 
 ```
-replacing "YOUR_CLIENT_ID" with the Client ID listed under App Details. 
 
 Finally, in the App Bot User section, click to reveal your token. This 
 token is used as the authentication for you bot to log in, so you'll want 
@@ -81,8 +84,16 @@ client.login(secret.token)
 ```
 
 We can now start our bot with `node main.js`, and if everything is working properly
-you should be able to have a rivting conversation such as this one.
+you should be off to a riviting conversation with your bot.
 
 
-```
+
+## Conclusion
+
+Hopefully this serves as a starting ground for anyone new to node.js and struggling 
+to get up and running. If you run into trouble as you add more complexity to your bot, 
+Discord.js has a pretty active Discord server wher you can usually get quick help!
+
+I'll be adding a bit more depth to this guide shortly, including deploying your bot
+to a free AWS ec2 instance so your bot can be running 24/7. 
 
