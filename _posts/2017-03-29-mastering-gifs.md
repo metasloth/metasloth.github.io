@@ -18,7 +18,8 @@ It’s also clear that not all gifs are created equal. Tumblr’s 1MB limit for 
 
 Whereas browsing /r/highqualitygifs on reddit reveals masterpieces like this 41 second, 624 pixel wide piece of art:
 <div class="vidcenter">
-<video preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline="">
+<video preload="auto" autoplay="autoplay" style="max-width: 100%; min-height: 409.5px;"
+muted="muted" loop="loop" webkit-playsinline="">
                 <source src="//i.imgur.com/E0l6vsB.mp4" type="video/mp4">
 </video>
 </div>
