@@ -2,7 +2,7 @@
 layout: post
 title:  "Making high quality gifs with FFmpeg"
 date:   2017-03-29 18:03:47 -0600
-description: Who needs 
+description: Learn to master the freshest image format the 80's has to offer.
 categories: gifs
 ---
 
@@ -25,11 +25,13 @@ Whereas browsing /r/highqualitygifs on reddit reveals masterpieces like this 41 
 
 ## The problem
 
-You’d think a format introduced 30 years ago would be a breeze to work with at this point, but if you’ve ever tried to make one you were probably caught off guard by how frustrating the process is. Sites like gfycat and imgur offer to convert your videos to gifs, but there is a 10 second limit and ambiguous resolution changes. Photoshop is the most common choice for creators at /r/highqualitygifs, but that is a pretty expensive investment just to up your karma on reddit. 
+You’d think a format introduced 30 years ago would be a breeze to work with at this point, but if you’ve ever tried to make one you were probably caught off guard by how frustrating the process is. Sites like gfycat and imgur offer to convert your videos to gifs, but there is a 10 second limit and ambiguous resolution changes. 
 
-A while ago I found [this post](http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html) which provided great insight into the gif’ing capabilities of FFmpeg, an open source, command-line video conversion program. I boiled down the essentials to a couple of bash scripts and creating gifs went from waiting on hoping Photoshop wouldn't run out for RAM to a painless ~60 second process. 
+If you want to make gifs manually, Photoshop is the most common choice for creators at /r/highqualitygifs, but that is a pretty expensive investment just to up your karma on reddit. 
 
-## Creating gifs with FFmpeg
+A while ago I found [this post](http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html) which provided great insight into the gif’ing capabilities of FFmpeg - an open source, command-line video conversion program. I boiled down the essentials to a couple of bash scripts, and creating gifs went from hoping Photoshop won't crash from using 16GB of RAM to a painless ~60 second process. 
+
+## Getting the Video Source Ready
 
 Assuming you have a source video that’s too long, FFmpeg can losslessly shorten it for you almost instantly with most video formats. All you have to do is update the variables in this script and voila!
 
@@ -48,6 +50,8 @@ ffmpeg -i $input -ss $timein -c copy -t $length $output
 
 echo "Finished."
 ```
+
+## Creating the gif
 
 Check to make sure your video looks good, then this next script should take you home:
 
@@ -70,10 +74,10 @@ ffmpeg -v warning -i $input -i $palette -lavfi "$filters [x]; [x][1:v] paletteus
 echo " Finished."
 ```
 
-Typically this process takes around a minute, but if you’re attempting a particularly long gif you may be waiting longer.
+Typically this process takes around a minute, but if you’re attempting a particularly long gif you may be waiting a bit longer.
 
 
-You can see the performance it has with high color variance and heavy animation in this example 
+You can see the performance it has with high color variance and heavy animation in this example: 
 <div class="vidcenter">
 <video autoplay="" loop="" style="max-width: 100%; min-height: 360px;"><source type="video/mp4" src="//i.imgur.com/6JRoICb.mp4"></video>
 </div>
@@ -84,5 +88,8 @@ As well as the clarity when using less complicated color pallets and lower frame
 <video autoplay="" loop="" style="max-width: 100%; min-height: 409.5px;"><source type="video/mp4" src="//i.imgur.com/oCrupnw.mp4"></video>
 </div>
 
-## Conclusion
-Keep in mind the raw `.gif` file you create is usually larger than the source video itself, so I recommend using imgur to host your gifs. They convert all gifs to HTML5 videos, which are a fraction of the size. This will keep mobile users happy as long as your remember to share the link ending in `.gifv`.
+## Notes
+
+Keep in mind the raw `.gif` file you create is usually larger than the source video itself (which is *insane*), so I recommend using imgur to host your gifs. They convert all gifs to HTML5 videos, which are a fraction of the size. This will keep mobile users happy as long as your remember to share the link ending in `.gifv`.
+
+Since it looks like gifs won't be going anywhere soon, I hope this post at least made it less stressfull for those without photoshop to create and share amazing memes.
