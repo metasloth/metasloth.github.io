@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Making high quality gifs with FFmpeg"
-date:   2017-03-29 18:03:47 -0600
+date:   2017-03-28 18:03:47 -0600
 description: Learn to master the freshest image format the 80's has to offer.
 categories: gifs
 ---

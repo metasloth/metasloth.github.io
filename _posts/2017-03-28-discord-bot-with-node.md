@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building a Discord Bot with Node.js"
-date:   2017-03-28 18:03:47 -0600
+date:   2017-03-27 18:03:47 -0600
 description: Add some custom functionality to you discord server with node.js
 categories: nodejs
 ---
