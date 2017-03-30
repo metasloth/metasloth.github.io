@@ -4,5 +4,4 @@ title: about
 permalink: /about/
 ---
 
-This site is still under construction, soon I'm sure there will be facinating 
-info about me here!
+Hi there! This site is a place for me to share projects I'm working on, my opinion on how awesome sloths are, and hopefully soon a plethora of helpful scripts I've used and aquired over the years.
