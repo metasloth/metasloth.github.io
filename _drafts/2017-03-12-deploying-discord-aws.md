@@ -2,7 +2,7 @@
 layout: post
 title:  "Draft: Deploying a Discord Bot to AWS"
 date:   2017-03-12 18:03:47 -0600
-description: Keep your custom bot running 24/7 on a free ec2 instance.
+description: Keep your custom bot running 24/7 on a free ec2 instance
 categories: nodejs
 ---
 
