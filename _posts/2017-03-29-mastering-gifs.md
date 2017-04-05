@@ -6,7 +6,7 @@ description: Learn to master the freshest image format the 80's has to offer.
 categories: gifs
 ---
 
-It’s quite impressive how prevalent gifs are in internet, considering the file format was introduced 30 years ago. That being said the lossless file format is just as inefficient as ever, and still a complete pain to work with. 
+It’s quite impressive how prevalent gifs are throughout the internet, considering the file format was introduced 30 years ago. That being said the lossless file format is just as inefficient as ever, and still a complete pain to work with. 
 
 
 
